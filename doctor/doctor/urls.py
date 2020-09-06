@@ -18,11 +18,13 @@ from django.urls import path
 from django.urls import path, include
 
 from appatencion.views import InicioView
+from appcore.views import LoginView
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', InicioView.as_view(), name='inicio'),
+    path('login/', LoginView.as_view(), name='login'),
     path('appatencion/', include('appatencion.urls')),
 ]
 if settings.DEBUG:

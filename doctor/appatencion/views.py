@@ -6,5 +6,8 @@ class InicioView(TemplateView):
     template_name = "index.html"
 
 
-class PacienteView(TemplateView):
-    template_name = "atencion/paciente/paciente.html"
+class AtencionView(TemplateView):
+    template_name = "atencion/atencion.html"
+
+
+

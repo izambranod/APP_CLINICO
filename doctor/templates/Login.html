@@ -1,0 +1,43 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+{% load static%}
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}" >
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 login-form-1">
+                    <span class="text-light font-weight-bold"><img src="{% static 'imagenes/logo3.svg' %}"
+						width="450px">edical</span></a>
+                </div>
+                <div class="col-md-6 login-form-2">
+                    <h3>Bienvenido de vuelta </h3>
+                    <form>
+						<label>email</label>
+                        <div class="form-group">
+							
+                            <input type="text" class="form-control" placeholder="Ingrese su Email *" value="" />
+						</div>
+						<label>contraseña</label>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Ingrese su contraseña *" value="" />
+						</div>
+						<div class="form-group">
+
+                            <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+						</div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Iniciar Sesion" />
+                        </div>
+                        
+						<label2>Desea iniciar sesion con:</label2>
+						<div class="form-group">
+							<input type="submit" class="btnSubmit2" value="Facebook" />
+							<input type="submit" class="btnSubmit2" value="Google" />
+                        </div>
+						<label2>Registarse</label2>
+                    </form>
+                </div>
+            </div>
+        </div>

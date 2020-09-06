@@ -1,8 +1,10 @@
 from django.contrib import admin
 from django.urls import path
-from appatencion.views import PacienteView
+from appatencion.views import AtencionView
+
 from django.conf import settings
 app_name = "appatencion"
 urlpatterns = [
-    path('paciente/', PacienteView.as_view(), name='paciente'),
+    path('atencion/', AtencionView.as_view(), name='atencion'),
+  
 ]
